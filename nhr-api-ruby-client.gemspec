@@ -27,7 +27,8 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/.DS_Store",
-    "lib/nhr-api-ruby-client.rb"
+    "lib/nhr-api-ruby-client.rb",
+    "nhr-api-ruby-client.gemspec"
   ]
   s.homepage = "http://github.com/kaogaau/nhr-api-ruby-client"
   s.licenses = ["MIT"]
