@@ -17,8 +17,8 @@ Juwelier::Tasks.new do |gem|
   gem.name = "nhr-api-ruby-client"
   gem.homepage = "http://github.com/kaogaau/nhr-api-ruby-client"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{The ruby gem about NHR Device}
+  gem.description = %Q{The ruby gem about NHR Device}
   gem.email = "kaogaau@gmail.com"
   gem.authors = ["kaogaau"]
 
