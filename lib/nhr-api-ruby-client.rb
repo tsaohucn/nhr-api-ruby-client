@@ -22,7 +22,7 @@ module Nhr
       response = RestClient::Resource.new(@nhr_url, :ssl_version => 'TLSv1').post(formdata)  
       raise "response nil" if response == nil
       response = JSON.parse(response.split(';')[-1].gsub("\r\n\t\r\n?>\t",'')) 
-      return 'not_found_data' if @action = 'GetPIRMotionStatus' && response['response'] == 'not found data!!'
+      return response if @action = 'GetPIRMotionStatus' && response['response'] == 'not found data!!'
       raise "#{response},gateway_id: #{@gateway_id}" unless response['status'] == true  
       @response = response
   	end
