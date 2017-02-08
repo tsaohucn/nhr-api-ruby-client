@@ -11,7 +11,8 @@ gem 'json', '~> 1.8.1'
 group :development do
   gem "shoulda", ">= 0"
   gem "rdoc", "~> 3.12"
-  gem "bundler", "~> 1.0"
+  gem 'bundler', '>= 1.5.0'
   gem "juwelier", "~> 2.2.0"
   gem "simplecov", ">= 0"
+  gem "rspec"
 end
