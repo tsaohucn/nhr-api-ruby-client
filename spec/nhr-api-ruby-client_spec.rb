@@ -10,8 +10,8 @@ end
 
 describe Nhr::Client do
   before(:all) do #itri-tomato.project@insnergy.com
-    @nhr_url = 'http://59.124.104.45/api/getinformation.php'
-    @token = '762a2cd972e278df40f9425ecfdaf486e6efedf8c1be02e3a227ce'
+    @nhr_url = 'https://www.sentrolcloud.com/api/getinformation.php'
+    @token = '762a2cd972e278df40f942e908ae25bd5ecfdaf486e6efedf8c1be02e3a227ce'
     @action = 'GetPlugPowerConsumption'
     @cmdvalue = '1'
     @device_ieee = '00124B000426162F'

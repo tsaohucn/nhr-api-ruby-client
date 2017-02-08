@@ -22,7 +22,7 @@ module Nhr
   	def client
       parameter = {token: @token, gateway_id: @gateway_id, action: @action, stime: @stime, etime: @etime, device_ieee: @device_ieee, cmdvalue: @cmdvalue}
       formdata = URI.encode_www_form(parameter)
-      response = RestClient::Resource.new(@nhr_url, :ssl_version => 'TLSv1').post(formdata)  
+      response = RestClient::Resource.new(@nhr_url).post(formdata)  
       raise "response nil，it should must be a json string and could be gsub" unless response
       response = JSON.parse(response.split(';')[-1].gsub("\r\n\t\r\n?>\t",'')) 
       raise "#{response['response']}" unless response['status'] == true or (@action = 'GetPIRMotionStatus' && response['response'] == 'not found data!!') 
